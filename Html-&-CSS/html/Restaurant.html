@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../CSS/Restaurant.css" />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loader"><div class="spin"></div></div>
+
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="logo">🍽️ Delicious Bites</div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#chef">Chef</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#book">Book</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="hero-content">
+        <h1>Experience the Taste of Happiness</h1>
+        <p>Fresh • Delicious • Memorable</p>
+        <a class="btn" href="#menu">Explore Menu</a>
+      </div>
+    </header>
+
+    <!-- Main Wrapper to prevent extreme wide stretching on TVs -->
+    <div class="container">
+      
+      <!-- About Section -->
+      <section id="about" class="about">
+        <div class="about-text">
+          <h2>About Us</h2>
+          <p>We prepare delicious meals using fresh ingredients and expert chefs. Every plate tells a story of passion, tradition, and culinary excellence.</p>
+        </div>
+        <div class="about-img">
+          <img src="../img-&-gif/Customer.jpg" alt="Customers enjoying food" />
+        </div>
+      </section>
+
+      <!-- Menu Section -->
+      <section id="menu">
+        <h2>Featured Menu</h2>
+        <div class="cards">
+          <div class="card">
+            <img src="../img-&-gif/Pizza.jpg" alt="Pizza" title="Pizza" />
+            <h3>Pizza</h3>
+            <p class="price">$12</p>
+            <button class="btn-order">Order</button>
+          </div>
+          <div class="card">
+            <img src="../img-&-gif/Cheeseburger.jpg" alt="Burger" title="Burger" />
+            <h3>Burger</h3>
+            <p class="price">$10</p>
+            <button class="btn-order">Order</button>
+          </div>
+          <div class="card">
+            <img src="../img-&-gif/pasta.jpg" alt="Pasta" title="Pasta" />
+            <h3>Pasta</h3>
+            <p class="price">$14</p>
+            <button class="btn-order">Order</button>
+          </div>
+          <div class="card">
+            <img src="../img-&-gif/Chicken.jpg" alt="Grilled Chicken" title="Grilled Chicken" />
+            <h3>Grilled Chicken</h3>
+            <p class="price">$18</p>
+            <button class="btn-order">Order</button>
+          </div>
+          <div class="card">
+            <img src="../img-&-gif/french.jpg" alt="French Fries" title="French Fries" />
+            <h3>French Fries</h3>
+            <p class="price">$8</p>
+            <button class="btn-order">Order</button>
+          </div>
+          <div class="card">
+            <img src="../img-&-gif/Ifood.jpg" alt="Indian Food" title="Indian Food" />
+            <h3>Indian Food</h3>
+            <p class="price">$24</p>
+            <button class="btn-order">Order</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+          <img src="../img-&-gif/food1.jpg" alt="Gallery image 1" />
+          <img src="../img-&-gif/food2.jpg" alt="Gallery image 2" />
+          <img src="../img-&-gif/food4.jpg" alt="Gallery image 3" />
+          <img src="../img-&-gif/food3.jpg" alt="Gallery image 4" />
+          <img src="../img-&-gif/food5.jpg" alt="Gallery image 5" />
+        </div>
+      </section>
+
+      <!-- Chef Section -->
+      <section id="chef" class="chef-section">
+        <h2>Meet Our Chef</h2>
+        <p class="subtitle">Award-winning flavors crafted with mastery.</p>
+        <div class="chef-container">
+          <img src="../img-&-gif/chef.jpg" alt="Chef portrait" />
+        </div>
+      </section>
+
+      <!-- Reviews Section -->
+      <section id="reviews">
+        <h2>Reviews</h2>
+        <div class="cards reviews-grid">
+          <div class="card review-card">
+            <p class="stars">★★★★★</p>
+            <p class="review-text">"Amazing food! The ambiance paired with genuine hospitality makes this place an absolute neighborhood gem."</p>
+          </div>
+          <div class="card review-card">
+            <p class="stars">★★★★★</p>
+            <p class="review-text">"Excellent service! The ingredients were remarkably fresh and the flavors were balanced perfectly."</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Booking Section -->
+      <section id="book">
+        <h2>Reserve a Table</h2>
+        <form class="booking-form">
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email" required />
+          <input type="date" title="Reservation date" required />
+          <input type="time" title="Reservation time" required />
+          <button type="submit" class="btn-submit">Book Now</button>
+        </form>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <h2>Contact</h2>
+        <p>📍 3b2 Food Street Chandigarh • 📞 +91 98XXXXXX10</p>
+      </section>
+
+    </div>
+
+    <!-- Floating Action Button -->
+    <a href="#menu" class="float-btn">🛒 Order Now</a>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 Delicious Bites. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
