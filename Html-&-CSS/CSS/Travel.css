@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block
+}
+
+a {
+    text-decoration: none;
+    transition: .3s
+}
+
+button {
+    transition: .3s;
+    cursor: pointer
+}
+
+section {
+    padding: 90px 8%;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #00cfe8;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar a {
+    color: #fff;
+}
+
+.nav-btn {
+    background: #00cfe8;
+    padding: 12px 28px;
+    border-radius: 40px;
+    color: #fff;
+}
+
+.nav-btn:hover {
+    background: #009fb5;
+    transform: translateY(-3px);
+}
+
+.hero {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    background:
+        linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45)),
+        url("../img-&-gif/background\ t.jpg") center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 760px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    text-shadow: 0 6px 20px rgba(0, 0, 0, .4);
+}
+
+.hero p {
+    margin: 20px auto 35px;
+    font-size: 1.2rem;
+    color: #f5f5f5;
+    line-height: 1.8;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 15px 35px;
+    border-radius: 40px;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background: #00cfe8;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 207, 232, .35);
+}
+
+.btn-secondary {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background: #fff;
+    color: #222;
+}
+
+.booking-box {
+    position: absolute;
+    bottom: 70px;
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 25px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, .18);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, .3);
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.input-box label {
+    color: #fff;
+    margin-bottom: 6px;
+}
+
+.input-box input {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    width: 180px;
+}
+
+.booking-box button {
+    background: #00cfe8;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 28px;
+}
+
+.curve {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+}
+
+.curve svg {
+    display: block;
+    width: 100%;
+    height: 60px;
+}
+
+/* DESTINATIONS */
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 2.4rem;
+}
+
+.section-title p {
+    color: #666;
+    margin-top: 10px;
+}
+
+.destinations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    background: #f7fbfc;
+}
+
+.card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    height: 230px;
+    width: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.card:hover img {
+    transform: scale(1.08);
+}
+
+.card-content {
+    padding: 22px;
+}
+
+.card-content h3 {
+    margin-bottom: 12px;
+}
+
+.card-content p {
+    color: #666;
+    margin-bottom: 16px;
+}
+
+.card-content a {
+    color: #00a8c4;
+    font-weight: 600;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    height: 280px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .25);
+}
+
+.contact {
+    background: linear-gradient(135deg, #0ea5e9, #2563eb);
+    color: #fff;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 650px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 35px;
+    background: rgba(255, 255, 255, .15);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+}
+
+.contact button {
+    border: none;
+    background: #fff;
+    color: #2563eb;
+    padding: 16px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+footer {
+    background: #111827;
+    color: #ddd;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content,
+.card,
+.gallery img {
+    animation: fadeUp .8s ease;
+}
+
+@media(max-width:992px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero h1 {
+        font-size: 3.2rem;
+    }
+
+    .booking-box {
+        position: static;
+        margin-top: 40px;
+    }
+}
+
+@media(max-width:768px) {
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 120px 20px 60px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .booking-box {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .input-box,
+    .input-box input,
+    .booking-box button {
+        width: 100%;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
